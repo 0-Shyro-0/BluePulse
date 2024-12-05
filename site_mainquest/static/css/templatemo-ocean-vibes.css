@@ -259,6 +259,9 @@ button.mfp-arrow {
 .Paragraph {
     margin-left: 1%;
 }
+.Image {
+    width: 100%;
+}
 
 
 .tm-paging-link {
