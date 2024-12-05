@@ -33,6 +33,7 @@ a:hover, a.active { color: #309AFD; }
     transition: all 0.3s ease;
 }
 
+
 button.tm-btn {
     padding: 15px 40px;
 }
@@ -120,7 +121,7 @@ a {
     padding: 30px;
     border: 1px solid #D2D3D4;
     color: #999; 
-    box-sizing: border-box;
+    box-sizing: 500px;
 }
 
 .tm-nav-link:hover,
@@ -249,6 +250,10 @@ button.mfp-arrow {
 
 .tm-paging li {
     list-style: none;
+}
+
+.Intro {
+    margin-left: 1%;
 }
 
 .tm-paging-link {
