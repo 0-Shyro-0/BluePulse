@@ -1,0 +1,25 @@
+body {
+    background-color: #f0e68c;
+    color: #000;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 50px;
+}
+.username-slot {
+    font-size: 2em;
+    border: 3px dashed #000;
+    display: inline-block;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.buttons {
+    margin-top: 10px;
+}
+button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #f08080;
+    border: 2px solid #000;
+}

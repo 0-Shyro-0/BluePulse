@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slot Machine Username</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Enter Your Username</h1>
+    <div class="username-slot" id="username-slot">A</div>
+    <div class="buttons">
+        <button onclick="toggleCycling()" id="toggle-button">Stop Letter</button>
+        <button onclick="nextLetter()">Next Letter</button>
+        <button onclick="endInput()">End Input</button>
+    </div>
+    <h3>Your Username: <span id="username"></span></h3>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
