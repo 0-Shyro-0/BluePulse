@@ -1,0 +1,110 @@
+/* The most eye-burning CSS ever created */
+body {
+    background: repeating-linear-gradient(45deg, 
+        #ff00ff, #ff00ff 10px, 
+        #00ff00 10px, #00ff00 20px);
+    font-family: "Comic Sans MS", cursive;
+    cursor: crosshair;
+}
+
+.container {
+    padding: 20px;
+    background-color: rgba(255, 255, 0, 0.8);
+    border: 10px dotted #ff0000;
+    box-shadow: 0 0 50px #00ffff;
+}
+
+.blinking-text {
+    animation: blink 0.5s infinite;
+    color: #ff0000;
+    text-shadow: 5px 5px #00ff00;
+    font-size: 4em;
+    text-align: center;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.rotating-input {
+    animation: rotate 2s infinite;
+    background: #ff00ff;
+    color: #00ff00;
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.bouncing-input {
+    animation: bounce 1s infinite;
+    background: #00ff00;
+    color: #ff00ff;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+.submit-btn {
+    background: #ff0000;
+    color: #00ffff;
+    font-size: 24px;
+    padding: 20px;
+    border: 5px solid #ff00ff;
+    animation: grow 0.5s infinite alternate;
+}
+
+@keyframes grow {
+    from { transform: scale(1); }
+    to { transform: scale(1.2); }
+}
+
+.feature-box {
+    background: #00ffff;
+    border: 8px dashed #ff00ff;
+    padding: 20px;
+    margin: 20px 0;
+    transform: skew(-10deg);
+}
+
+.rainbow-text {
+    animation: rainbow 1s infinite;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+@keyframes rainbow {
+    0% { color: #ff0000; }
+    20% { color: #ff00ff; }
+    40% { color: #00ff00; }
+    60% { color: #00ffff; }
+    80% { color: #0000ff; }
+    100% { color: #ff0000; }
+}
+
+input[type="range"] {
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(90deg, #ff0000, #00ff00, #0000ff);
+}
+
+#visitor-counter {
+    font-size: 24px;
+    text-align: center;
+    background: #000000;
+    color: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 50%;
+    animation: spin 3s infinite linear;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}

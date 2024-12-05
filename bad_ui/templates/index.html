@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super page HTML</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="blinking-text">BIENVENUE SUR NOTRE SUPER SITE!!!</h1>
+        <marquee direction="right" scrollamount="20">🚀 ELU MEILLEUR SITE DE LANNEE 1970 11!1!1!1!1!1!1!1! 🚀</marquee>
+        
+        <div class="form-group">
+            <label for="phone">Entrez votre numero: </label>
+            <input type="range" id="phone" min="1000000000" max="9999999999" value="5555555555">
+            <div id="phoneDisplay">Numero de tel: 5555555555</div>
+        </div>
+
+        <div class="signup-form">
+            <input type="text" placeholder="Nom" class="rotating-input">
+            <input type="email" placeholder="Email" class="bouncing-input">
+            <button class="submit-btn" onclick="showPopup()">CLIQUEZ ICI!!!</button>
+        </div>
+
+        <div class="features">
+            <div class="feature-box">
+                <h2>💥 POURQUOI NOTRE SITE EST LE MEILLEUR 💥</h2>
+                <ul>
+                    <li>✨ INCLUSIF ET TOLERANT!</li>
+                    <li>🎯 SUPER POPUPS POUR NE PAS MANQUER LE SMEILLURS DELAS!</li>
+                    <li>🎵 On adore tous la musique</li>
+                    <li>🌈 Le comic sans ms est la meilleure police!</li>
+                </ul>
+            </div>
+        </div>
+        <div id="visitor-counter">
+            <span>YOU ARE VISITOR NUMBER:</span>
+            <span id="counter" class="rainbow-text">1337</span>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
