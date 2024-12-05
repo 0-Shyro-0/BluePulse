@@ -97,6 +97,7 @@ a {
 #tm-video {
     width: 100%;
     height: auto;
+    cursor: progress;
 }
 
 #tm-video-control-button {
@@ -262,6 +263,7 @@ button.mfp-arrow {
 .Image {
     width: 100%;
 }
+
 
 
 .tm-paging-link {
