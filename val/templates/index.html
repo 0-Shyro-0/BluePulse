@@ -1,19 +1,112 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slot Machine Username</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>BluePulse</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> <!-- https://fonts.google.com/ -->
+    <link rel="stylesheet" href="static/fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
+    <link rel="stylesheet" href="static/css/magnific-popup.css"> 
+    <link rel="stylesheet" href="static/css/templatemo-ocean-vibes.css"> 
+    <link rel="icon" type="image/x-icon" href="static/favicon.ico">
 </head>
 <body>
-    <h1>Enter Your Username</h1>
-    <div class="username-slot" id="username-slot">A</div>
-    <div class="buttons">
-        <button onclick="toggleCycling()" id="toggle-button">Stop Letter</button>
-        <button onclick="nextLetter()">Next Letter</button>
-        <button onclick="endInput()">End Input</button>
+    <header class="tm-site-header">
+        <h1 class="tm-mt-0 tm-mb-15"><span class="tm-color-primary">Blue</span><span class="tm-color-gray-2">Pulse</span></h1>
+        <em class="tm-tagline tm-color-light-gray">Feel the ocean's heartbeat</em>
+    </header>
+
+    <!-- Video banner 400 px height -->
+    <div id="tm-video-container">
+        <video autoplay muted loop id="tm-video">
+            <source src="static/video/video.mp4" type="video/mp4">
+        </video>  
+        <i id="tm-video-control-button" class="fas fa-pause"></i>
     </div>
-    <h3>Your Username: <span id="username"></span></h3>
-    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+    </body>
+
+    <div class="Intro">
+        <p>
+            <h3>Les Profondes Connexions entre la Biodiversité Océanique et le Corps Humain : Un Voyage à Travers la Mer et la Chair</h3>
+            Les océans couvrent plus de 70 % de la surface de la Terre et abritent une biodiversité extraordinaire, encore largement inexplorée. D’un autre côté, le corps humain est un univers tout aussi complexe, où chaque cellule, organe, et système interagit pour maintenir la vie. Ces deux mondes, apparemment éloignés, sont intimement liés à travers des relations biologiques, chimiques, et même philosophiques. Plongeons dans cette symbiose fascinante pour explorer comment la biodiversité marine influence, reflète et interagit avec chaque partie de notre anatomie.
+
+        </p>
+    </div>
+
+    <div class="tm-container">
+        <nav class="tm-main-nav">
+            <ul id="inline-popups">
+                <li class="tm-nav-item">
+                    <a href="skin.html" data-effect="mfp-move-from-top" class="tm-nav-link">
+                        La Peau et les Coraux : La Barrière Protectrice
+                        <i class="fas fa-3x fa-hand-paper"></i>
+                    </a>                
+                </li>
+                <li class="tm-nav-item">
+                    <a href="lungs.html" data-effect="mfp-move-from-top" class="tm-nav-link" id="tm-gallery-link">
+                        Les Poumons et le Phytoplancton : Les Poumons Bleus
+                        <i class="fas fa-3x fa-lungs"></i>
+                    </a>
+                </li>
+                <li class="tm-nav-item">
+                    <a href="heart.html" data-effect="mfp-move-from-top" class="tm-nav-link">
+                        Le Cœur et les Courants Marins : L'Élan de la Vie
+                        <i class="far fa-3x fa-heart"></i>
+                    </a>
+                </li>
+                <li class="tm-nav-item">
+                    <a href="immune.html" data-effect="mfp-move-from-top" class="tm-nav-link">
+                        Le Système Immunitaire et les Éponges : Les Défenseurs Silencieux
+                        <i class="fas fa-3x fa-shield-alt"></i>
+                    </a>
+                </li>
+                <li class="tm-nav-item">
+                    <a href="brain.html" data-effect="mfp-move-from-top" class="tm-nav-link">
+                        Le Cerveau et les Abysses : L'Inexploré
+                        <i class="fas fa-3x fa-brain"></i>
+                    </a>
+                </li>
+                <li class="tm-nav-item">
+                    <a href="bones.html" data-effect="mfp-move-from-top" class="tm-nav-link">
+                        Les Os et les Crustacés : La Résilience et la Structure
+                        <i class="fas fa-3x fa-bone"></i>
+                    </a>
+                </li>
+                <li class="tm-nav-item">
+                    <a href="blood.html" data-effect="mfp-move-from-top" class="tm-nav-link">
+                        Le Sang et l'Océan : La Circulation de la Vie
+                        <i class="fas fa-3x fa-tint"></i>
+                    </a>
+                </li>
+                <li class="tm-nav-item">
+                    <a href="microbiote.html" data-effect="mfp-move-from-top" class="tm-nav-link">
+                        Le Microbiote et les Fonds Marins : Les Écosystèmes Invisibles
+                        <i class="fas fa-3x fa-bacterium"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
+
+    <div id="skin" class="mfp-hide">
+        <h2>La Peau et les Coraux</h2>
+        <p>La peau humaine agit comme une barrière protectrice, tout comme les coraux protègent les écosystèmes marins...</p>
+    </div>
+    <div id="lungs" class="mfp-hide">
+        <h2>Les Poumons et le Phytoplancton</h2>
+        <p>Le phytoplancton produit une grande partie de l'oxygène de la planète, faisant écho à la fonction essentielle des poumons...</p>
+    </div>
+
+    
+
+
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/isotope.pkgd.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>    
+<script src="js/templatemo-script.js"></script>
 </body>
 </html>

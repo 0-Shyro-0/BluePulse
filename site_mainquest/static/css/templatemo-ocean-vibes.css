@@ -256,6 +256,10 @@ button.mfp-arrow {
 .Intro {
     margin-left: 1%;
 }
+.Paragraph {
+    margin-left: 1%;
+}
+
 
 .tm-paging-link {
     display: flex;
