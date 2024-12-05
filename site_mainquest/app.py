@@ -13,6 +13,34 @@ AUTHORIZED_IPS = [
     "10.74.252.212",
 ]
 
+@app.route('/bones.html')
+def f1():
+    return render_template('bones.html')
+
+@app.route('/brain.html')
+def f2():
+    return render_template('brain.html')
+
+@app.route('/heart.html')
+def f3():
+    return render_template('heart.html')
+
+@app.route('/immune.html')
+def f4():
+    return render_template('immune.html')
+
+@app.route('/lungs.html')
+def f5():
+    return render_template('lungs.html')
+
+@app.route('/microbiote.html')
+def f6():
+    return render_template('microbiote.html')
+
+@app.route('/skin.html')
+def f7():
+    return render_template('skin.html')
+
 @app.route('/')
 def index():
     # Obtenir l'adresse IP du client
@@ -27,4 +55,4 @@ def unauthorized():
     return redirect('https://youareanidiot.cc/')
 
 if __name__ == '__main__':
-    app.run(host='10.74.252.212', debug=True)
+    app.run(host='10.74.252.216', debug=True)
