@@ -120,6 +120,7 @@ a {
     height: 200px;
     padding: 30px;
     border: 1px solid #D2D3D4;
+    border-radius: 16px;
     color: #999; 
     box-sizing: 500px;
 }
