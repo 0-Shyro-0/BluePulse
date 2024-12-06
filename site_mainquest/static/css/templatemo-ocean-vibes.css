@@ -128,7 +128,8 @@ a {
 
 .tm-nav-link:hover,
 .tm-nav-link.active {
-    color: #309AFD;
+    color: #ffffff;
+    background-color: #3a77b1;
 }
 
 .tm-nav-link i {
