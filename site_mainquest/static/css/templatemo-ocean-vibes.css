@@ -130,6 +130,7 @@ a {
 .tm-nav-link.active {
     color: #ffffff;
     background-color: #3a77b1;
+    cursor:copy;
 }
 
 .tm-nav-link i {
